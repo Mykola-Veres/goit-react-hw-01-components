@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import logo512 from './logo512.png';
+import { Section, Images } from './Painting.styled';
 
 export default function Painting({
   url = logo512,
@@ -8,13 +9,13 @@ export default function Painting({
   quantity,
 }) {
   return (
-    <section>
-      <img src={url} width="700" />
+    <Section>
+      <Images src={url} alt="img" />
       {title && <h2>{title}</h2>}
       <div>{price}Green card</div>
       <div>USA</div>
       <p>how many:{quantity > 10 ? 'many' : 'less'}</p>
-    </section>
+    </Section>
   );
 }
 Painting.propTypes = {
