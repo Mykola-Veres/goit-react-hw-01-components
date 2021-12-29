@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Statistics from '../Statistics/Statistics';
 export default function StatisticsSection({ title, stats }) {
   return (
@@ -15,3 +17,8 @@ export default function StatisticsSection({ title, stats }) {
     </section>
   );
 }
+
+StatisticsSection.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
+};

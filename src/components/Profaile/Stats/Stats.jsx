@@ -1,18 +1,30 @@
+import { StatsList, StatsItem } from './Stats.styled';
+import PropTypes from 'prop-types';
+import { StatsSpan } from './Stats.styled';
+
 export default function Stats({ stats }) {
   return (
-    <ul>
-      <li>
-        <span>Followers</span>
+    <StatsList>
+      <StatsItem>
+        <StatsSpan>Followers</StatsSpan>
         <span>{stats.followers}</span>
-      </li>
-      <li>
-        <span>Views</span>
+      </StatsItem>
+      <StatsItem>
+        <StatsSpan>Views</StatsSpan>
         <span>{stats.views}</span>
-      </li>
-      <li>
-        <span>Likes</span>
+      </StatsItem>
+      <StatsItem>
+        <StatsSpan>Likes</StatsSpan>
         <span>{stats.likes}</span>
-      </li>
-    </ul>
+      </StatsItem>
+    </StatsList>
   );
 }
+
+Stats.propTypes = {
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
+};

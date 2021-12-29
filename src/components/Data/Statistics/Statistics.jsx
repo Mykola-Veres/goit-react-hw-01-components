@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export default function Statistics({ label, percentage }) {
   return (
     <li className="item">
@@ -6,3 +7,8 @@ export default function Statistics({ label, percentage }) {
     </li>
   );
 }
+
+Statistics.propTypes = {
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};

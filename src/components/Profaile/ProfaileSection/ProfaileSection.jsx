@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Description from '../Description/Description';
 import Stats from '../Stats/Stats';
 export default function ProfileSection({ user }) {
@@ -13,3 +14,7 @@ export default function ProfileSection({ user }) {
     </div>
   );
 }
+
+ProfileSection.propTypes = {
+  user: PropTypes.object,
+};
