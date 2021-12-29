@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { TransactionTbody } from './TransactionHistory.styled';
 import {
   TransactionTable,
   TransactionTitle,
@@ -16,7 +17,7 @@ export default function TransactionHistory({ items }) {
         </TransactionTitle>
       </thead>
 
-      <tbody>
+      <TransactionTbody>
         {items.map(item => (
           <TransactionItem
             key={item.id}
@@ -25,7 +26,7 @@ export default function TransactionHistory({ items }) {
             currency={item.currency}
           ></TransactionItem>
         ))}
-      </tbody>
+      </TransactionTbody>
     </TransactionTable>
   );
 }
