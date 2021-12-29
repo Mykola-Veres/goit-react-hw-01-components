@@ -1,12 +1,12 @@
-import { Conteiner } from './Description.staled';
+import { Conteiner, Images, TextTitle, Text } from './Description.staled';
 import PropTypes from 'prop-types';
 export default function Description({ username, tag, location, avatar }) {
   return (
     <Conteiner>
-      <img src={avatar} alt={username} />
-      <p>{username}</p>
-      <p>{tag}</p>
-      <p>{location}</p>
+      <Images src={avatar} alt={username} />
+      <TextTitle>{username}</TextTitle>
+      <Text>{tag}</Text>
+      <Text>{location}</Text>
     </Conteiner>
   );
 }

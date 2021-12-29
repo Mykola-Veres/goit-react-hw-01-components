@@ -1,21 +1,25 @@
-import { StatsList, StatsItem } from './Stats.styled';
+import {
+  StatsList,
+  StatsItem,
+  StatsSpanNumber,
+  StatsSpan,
+} from './Stats.styled';
 import PropTypes from 'prop-types';
-import { StatsSpan } from './Stats.styled';
 
 export default function Stats({ stats }) {
   return (
     <StatsList>
       <StatsItem>
         <StatsSpan>Followers</StatsSpan>
-        <span>{stats.followers}</span>
+        <StatsSpanNumber>{stats.followers}</StatsSpanNumber>
       </StatsItem>
       <StatsItem>
         <StatsSpan>Views</StatsSpan>
-        <span>{stats.views}</span>
+        <StatsSpanNumber>{stats.views}</StatsSpanNumber>
       </StatsItem>
       <StatsItem>
         <StatsSpan>Likes</StatsSpan>
-        <span>{stats.likes}</span>
+        <StatsSpanNumber>{stats.likes}</StatsSpanNumber>
       </StatsItem>
     </StatsList>
   );

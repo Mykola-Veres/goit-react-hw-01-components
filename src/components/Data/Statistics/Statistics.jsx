@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+import { StatisticsItem, StatisticsSpan } from './Statistics.styled';
+
 export default function Statistics({ label, percentage }) {
   return (
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
-    </li>
+    <StatisticsItem className="item">
+      <StatisticsSpan className="label">{label}</StatisticsSpan>
+      <StatisticsSpan className="percentage">{percentage}</StatisticsSpan>
+    </StatisticsItem>
   );
 }
 

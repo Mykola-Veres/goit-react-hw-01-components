@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import Description from '../Description/Description';
+import { ConteinerSection } from './ProfaileSection.styled';
 import Stats from '../Stats/Stats';
+
 export default function ProfileSection({ user }) {
   return (
-    <div>
+    <ConteinerSection>
       <Description
         username={user.username}
         tag={user.tag}
@@ -11,7 +13,7 @@ export default function ProfileSection({ user }) {
         avatar={user.avatar}
       ></Description>
       <Stats stats={user.stats}></Stats>
-    </div>
+    </ConteinerSection>
   );
 }
 
