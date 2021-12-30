@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
-import { TransactionTbody } from './TransactionHistory.styled';
 import {
+  TransactionTbody,
   TransactionTable,
   TransactionTitle,
 } from './TransactionHistory.styled';
 
-import TransactionItem from '../TransactionItem/TransactionItem';
+import TransactionItem from './TransactionItem';
+
 export default function TransactionHistory({ items }) {
   return (
     <TransactionTable className="transaction-history">
@@ -32,5 +33,5 @@ export default function TransactionHistory({ items }) {
 }
 
 TransactionHistory.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.array.isRequired,
 };

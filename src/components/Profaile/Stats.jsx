@@ -6,20 +6,20 @@ import {
 } from './Stats.styled';
 import PropTypes from 'prop-types';
 
-export default function Stats({ stats }) {
+export default function Stats({ followers, views, likes }) {
   return (
     <StatsList>
       <StatsItem>
         <StatsSpan>Followers</StatsSpan>
-        <StatsSpanNumber>{stats.followers}</StatsSpanNumber>
+        <StatsSpanNumber>{followers}</StatsSpanNumber>
       </StatsItem>
       <StatsItem>
         <StatsSpan>Views</StatsSpan>
-        <StatsSpanNumber>{stats.views}</StatsSpanNumber>
+        <StatsSpanNumber>{views}</StatsSpanNumber>
       </StatsItem>
       <StatsItem>
         <StatsSpan>Likes</StatsSpan>
-        <StatsSpanNumber>{stats.likes}</StatsSpanNumber>
+        <StatsSpanNumber>{likes}</StatsSpanNumber>
       </StatsItem>
     </StatsList>
   );
@@ -28,7 +28,7 @@ export default function Stats({ stats }) {
 Stats.propTypes = {
   stats: PropTypes.shape({
     followers: PropTypes.number.isRequired,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };

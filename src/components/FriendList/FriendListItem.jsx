@@ -5,6 +5,7 @@ import {
   FriendsText,
   FriendsSpanisOnline,
 } from './FriendListItem.styled';
+
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
     <FriendsList className="item">

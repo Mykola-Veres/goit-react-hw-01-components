@@ -18,7 +18,6 @@ export const Images = styled.img`
   margin-bottom: 20px;
 `;
 export const TextTitle = styled.p`
-  /* text-decoration: bold; */
   font-weight: bold;
   font-size: large;
   margin-bottom: 10px;
