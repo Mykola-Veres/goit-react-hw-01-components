@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { FriendsList } from './FriendList.styled';
-import FriendListItem from './FriendListItem';
+import FriendListItem from '../FriendListItem/FriendListItem';
 
 export default function FriendList({ friends }) {
   return (
@@ -18,5 +18,5 @@ export default function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array,
+  friends: PropTypes.array.isRequired,
 };

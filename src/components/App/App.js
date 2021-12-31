@@ -1,11 +1,11 @@
 import { Conteiner } from './App.styled';
-import user from '../../Data/user.json';
+import user from '../../data/user.json';
 import ProfileSection from '../Profaile/ProfaileSection';
-import data from '../../Data/data.json';
-import StatisticsSection from '../Statistics/StatisticsSection';
+import data from '../../data/data.json';
+import StatisticsSection from '../StatistcsSection/StatisticsSection';
 import FriendList from '../FriendList/FriendList';
-import friend from '../../Data/friend.json';
-import transaction from '../../Data/transaction.json';
+import friend from '../../data/friend.json';
+import transaction from '../../data/transaction.json';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
 
 export default function App() {

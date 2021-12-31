@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import Description from './Description';
+import Description from '../ProfaileDescription/Description';
 import { ConteinerSection } from './ProfaileSection.styled';
-import Stats from './Stats';
+import Stats from '../ProfaileStats/Stats';
 
 export default function ProfileSection({
   username,

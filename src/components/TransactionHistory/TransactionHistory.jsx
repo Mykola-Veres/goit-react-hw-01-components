@@ -5,7 +5,7 @@ import {
   TransactionTitle,
 } from './TransactionHistory.styled';
 
-import TransactionItem from './TransactionItem';
+import TransactionItem from '../TransactionItem/TransactionItem';
 
 export default function TransactionHistory({ items }) {
   return (
