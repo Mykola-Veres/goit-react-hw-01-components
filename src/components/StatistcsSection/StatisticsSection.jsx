@@ -12,7 +12,7 @@ export default function StatisticsSection({ title, stats }) {
             key={stat.id}
             label={stat.label}
             percentage={stat.percentage}
-          ></Statistics>
+          />
         ))}
       </StatisticsList>
     </Section>

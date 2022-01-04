@@ -25,7 +25,7 @@ export default function TransactionHistory({ items }) {
             type={item.type}
             amount={item.amount}
             currency={item.currency}
-          ></TransactionItem>
+          />
         ))}
       </TransactionTbody>
     </TransactionTable>

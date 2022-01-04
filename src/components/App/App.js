@@ -17,10 +17,10 @@ export default function App() {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-      ></ProfileSection>
-      <StatisticsSection title="Upload stats" stats={data}></StatisticsSection>
-      <FriendList friends={friend}></FriendList>
-      <TransactionHistory items={transaction}></TransactionHistory>
+      />
+      <StatisticsSection title="Upload stats" stats={data} />
+      <FriendList friends={friend} />
+      <TransactionHistory items={transaction} />
     </Conteiner>
   );
 }

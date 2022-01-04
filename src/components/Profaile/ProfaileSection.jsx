@@ -17,12 +17,12 @@ export default function ProfileSection({
         tag={tag}
         location={location}
         avatar={avatar}
-      ></Description>
+      />
       <Stats
         followers={stats.followers}
         views={stats.views}
         likes={stats.likes}
-      ></Stats>
+      />
     </ConteinerSection>
   );
 }

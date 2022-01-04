@@ -10,9 +10,9 @@ export default function FriendListItem({ avatar, name, isOnline }) {
   return (
     <FriendsList className="item">
       {isOnline ? (
-        <FriendsSpanisOnline className="status"></FriendsSpanisOnline>
+        <FriendsSpanisOnline className="status" />
       ) : (
-        <FriendsSpan className="status"></FriendsSpan>
+        <FriendsSpan className="status" />
       )}
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <FriendsText className="name">{name}</FriendsText>
